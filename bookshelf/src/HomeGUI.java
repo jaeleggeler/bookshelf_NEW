@@ -134,7 +134,8 @@ public class HomeGUI extends JFrame{
         @Override
         public void actionPerformed(ActionEvent e) {
             if(e.getSource()== btn_neuesBuch){
-
+                new NeuesBuchGUI().setVisible(true);
+                dispose();
             }else if( e.getSource() == btn_bearbeiten){
                 new BuchAendernGUI().setVisible(true);
                 dispose();

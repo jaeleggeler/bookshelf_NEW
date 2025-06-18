@@ -235,7 +235,8 @@ public class NeuesBuchGUI extends JFrame{
         public void actionPerformed(ActionEvent e) {
             if (e.getSource() == btn_abbrechen){
                 
-                System.exit(0);
+                new HomeGUI().setVisible(true);
+                dispose();;
 
             }else if (e.getSource() == btn_speichern){
 
